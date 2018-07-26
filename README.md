@@ -15,6 +15,7 @@ My Knowledgebase
 * Is non pure FP actually as useless as Meijer says? Yes we do need to embrace the fact that impure programs are completely side-effecting. But we are still reducing (not eliminating, sure) the space for errors and simplify our reasoning a bit. I.e. I'd argue it's still better than traditional OOP.
 * Am I just stupid? 
     * Well, why is it even a question?
+* FP in the small -> pure FP (with IO) -> pure FP (with tagless final + interpreters, i.e. abstracting over effects)
 
 # TODO
 
