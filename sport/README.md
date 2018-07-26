@@ -1,0 +1,3 @@
+# Cycling 
+
+* "After a 45-minute warmup, do maximal efforts in this order, with full recovery (5-10 minutes very easy pedaling) in between each effort: five seconds (peak neuromuscular power); five minutes (peak aerobic power); 20 minutes (threshold power); and one minute (peak anaerobic capacity). Your functional threshold power is 95 percent of your 20-minute power number." from https://www.bicycling.com/training/a20023337/power-metrics/
