@@ -19,10 +19,10 @@ My Knowledgebase
 
 # TODO
 
-[] Read and annotate all the papers in the world
-[] Study fs2 in detail
-[] Study cats-effect in detail
-[] Study tagless final more, much more
-[] Learn Rust
-[] Write IO in Rust? Is it even possible with all the lifetime control stuff?
-[] Learn Idris
+[ ] Read asnd annotate all the papers in the world
+[ ] Study fs2 in detail
+[ ] Study cats-effect in detail
+[ ] Study tagless final more, much more
+[ ] Learn Rust
+[ ] Write IO in Rust? Is it even possible with all the lifetime control stuff?
+[ ] Learn Idris
