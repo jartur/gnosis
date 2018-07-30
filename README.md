@@ -16,6 +16,11 @@ My Knowledgebase
 * Am I just stupid? 
     * Well, why is it even a question?
 * FP in the small -> pure FP (with IO) -> pure FP (with tagless final + interpreters, i.e. abstracting over effects)
+* Typeclasses are kinda correspondent to ECS? 
+    * Typeclass = component's api
+    * datatype = entity + component's data
+    * instance = adding component to an entity
+    * constrained function = a system for respective components
 
 # TODO
 
@@ -26,3 +31,6 @@ My Knowledgebase
 - [ ] Learn Rust
 - [ ] Write IO in Rust? Is it even possible with all the lifetime control stuff?
 - [ ] Learn Idris
+- [ ] Generate all inhabitants of any 'small' type with shapeless
+- [ ] Go here http://nercury.github.io/rust/opengl/tutorial/2018/02/08/opengl-in-rust-from-scratch-00-setup.html
+- [ ] Write a mastodon back-end in rust? Who the hell writes RoR apps, damit.
