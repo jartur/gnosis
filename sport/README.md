@@ -16,3 +16,5 @@
 # Goals
 
 * I don't want to be a good runner or cyclist, I want to be an athlete guddamit! 
+* Focus on the fastest 10K / respective bike race I can do
+* Combine with ultralong but very low effort (~140) endurance stuff
