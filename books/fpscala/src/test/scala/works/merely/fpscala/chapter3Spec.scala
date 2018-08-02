@@ -30,4 +30,18 @@ class chapter3Spec extends FlatSpec with Matchers {
   "length" should "calculate the length of a list" in {
     chapter3.length(List(1, 2, 3)) should be (3)
   }
+
+  "foldLeft" should "fold a list" in {
+    chapter3.foldLeft(List(1, 2, 3), 0)(_+_) should be (6)
+    chapter3.foldLeft(List(1, 2, 3), List[Int]())((xs, x) => x :: xs) should be (List(3, 2, 1))
+  }
+
+  "foldLeftInFoldRight" should "behave like foldLeft" in {
+    chapter3.foldLeftInFoldRight(List(1, 2, 3), List[Int]())((xs, x) => x :: xs) should be (List(3, 2, 1))
+    chapter3.foldLeftInFoldRight2(List(1, 2, 3), List[Int]())((xs, x) => x :: xs) should be (List(3, 2, 1))
+  }
+
+  "foldRightInFoldLeft" should "behave like foldRight" in {
+    chapter3.foldRightInFoldLeft(List(1, 2, 3), List[Int]())((x, xs) => x :: xs) should be (List(1, 2, 3))
+  }
 }
