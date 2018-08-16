@@ -37,8 +37,6 @@ LargestTwin(xs) == CHOOSE x \in xs:
                     /\ \A y \in xs: 
                         TwinPrime(y) => y <= x
 
-MaxProfit(prices) == { <<t1, t2>> : { t1 \in DOMAIN prices }
-
 ```
 
 ## Index 
