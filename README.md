@@ -34,3 +34,13 @@ My Knowledgebase
 - [ ] Generate all inhabitants of any 'small' type with shapeless
 - [ ] Go here http://nercury.github.io/rust/opengl/tutorial/2018/02/08/opengl-in-rust-from-scratch-00-setup.html
 - [ ] Write a mastodon back-end in rust? Who the hell writes RoR apps, damit.
+
+# Notes
+
+* From https://www.youtube.com/watch?v=CQxviYlAKaY 
+    * Internal messages are bad, only evolve an actor from external messages. E.g. instead of firing up an internal ticking timer externalize the source of ticking. Makes actor more isolated and decoupled from the timing logic.
+    * Careful with capturing internals and leaking them through closures to other threads. E.g. doing something to private state in a future callback.
+    * Async blocking, `Future#pipeTo(ActorRef)`, `become` to wait for the result, then `become` back.
+    * Evolve like in Erlang, through passing immutable state to a new state.
+    * No I/O in actors, no effectful reads (say current time). As pure as possible, right.
+    * Mocks & stubs are signs of tight coupling. 
