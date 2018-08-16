@@ -90,7 +90,7 @@ object chapter3 {
   def filter[A](xs: List[A])(p: A => Boolean): List[A] = xs.foldRight(List[A]())((x, acc) => if (p(x)) x :: acc else acc)
 
   // 3.20
-  def flatMap[A, B](xs: List[A])(f: A => List[B]): List[B] = flatten(xs.map(f))
+  def flatMap[A, B](xs: List[A])(f: A => List[B]): List[B] = flatten(map(xs)(f))
 
   // 3.21
   def filterInFlatMap[A](xs: List[A])(p: A => Boolean): List[A] = flatMap(xs) { x => if (p(x)) List(x) else Nil }
