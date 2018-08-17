@@ -3,7 +3,7 @@
 *  `<< x_1, x_2, ..., x_n >> = [1 |-> x_1, 2 |-> x_2, ..., n |-> x_n]`
 * `[X -> Y]` is the set of all possible mappings from `X` to `Y`
 
-```tlaplus
+```tla
 IsComm(Op(_, _), x, y) == Op(x, y) = Op(y, x)
 
 Rev2(xs) == IF Len(xs) = 2 THEN << xs[2], xs[1] >> ELSE xs
